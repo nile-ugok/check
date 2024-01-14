@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login_style.css" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>アカウント作成</title>
+  </head>
+  <body class="log_icon_choose">
+    <a href="input.html">←</a>
+    <p class="icon_instruction">アイコン画像を選択してください。</p>
+    <!--  -->
+    <input
+      v-model="AccountName"
+      :style="inputAccountName"
+      @click.once="changeAccountName"
+    />
+    <!--  -->
+    <div class="chooseIcon">
+      <div class="1" :style="iconDesign">
+        <img src="../img/icon/1.svg" alt="" />
+      </div>
+      <div class="2" :style="iconDesign">
+        <img src="../img/icon/2.svg" alt="" />
+      </div>
+      <div class="3" :style="iconDesign">
+        <img src="../img/icon/3.svg" alt="" />
+      </div>
+      <div class="4" :style="iconDesign">
+        <img src="../img/icon/4.svg" alt="" />
+      </div>
+      <div class="5" :style="iconDesign">
+        <img src="../img/icon/5.svg" alt="" />
+      </div>
+      <div class="6" :style="iconDesign">
+        <img src="../img/icon/6.svg" alt="" />
+      </div>
+      <div class="7" :style="iconDesign">
+        <img src="../img/icon/7.svg" alt="" />
+      </div>
+      <div class="8" :style="iconDesign">
+        <img src="../img/icon/8.svg" alt="" />
+      </div>
+      <div class="9" :style="iconDesign">
+        <img src="../img/icon/9.svg" alt="" />
+      </div>
+      <div class="10" :style="iconDesign">
+        <img src="../img/icon/10.svg" alt="" />
+      </div>
+      <div class="11" :style="iconDesign">
+        <img src="../img/icon/11.svg" alt="" />
+      </div>
+      <div class="12" :style="iconDesign"><a href="icon_upload.html">+</a></div>
+    </div>
+
+    <!--  -->
+    <div class="icon_next">
+      <p>次へ</p>
+      <a href="completion.html" :style="iconNextArrow">→</a>
+    </div>
+
+    <!--  -->
+    <!--  -->
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="login_script.js"></script>
+  </body>
+</html>

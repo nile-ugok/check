@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  max-width: 430px;
+  max-height: 932px;
+}
+
+header {
+  z-index: 100;
+  background-color: #67d0d0;
+
+  width: 100%;
+  min-width: 375px;
+  max-width: 430px;
+  height: 125px;
+
+  margin: 0;
+  border-bottom: 2px solid black;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+header div img {
+  /* background-color: #00000025; */
+  margin: 60px 0 0 25px;
+  height: 50px;
+}
+header .h_text {
+  /* background-color: #00000025; */
+  margin: 60px 25px 0 0;
+  height: 50px;
+}
+header .h_text h1 {
+  /* background-color: #00000025; */
+  margin: 0;
+  font-size: 27px;
+  font-weight: lighter;
+  text-align: right;
+}
+header .h_text h2 {
+  /* background-color: #00000025; */
+  margin: 0;
+  font-size: 12px;
+  text-align: right;
+}
+
+/*  */
+main {
+  background-color: #d6eded;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* min-width: 320px; */
+  /* min-height: 480px; */
+  /* position: relative; */
+  margin: 0;
+  padding: 15% 0 0 0;
+
+  /*  */
+  font-family: "Zen Kaku Gothic New", sans-serif;
+}
+
+main .topimage {
+  background-image: url(./img/entrance.jpg);
+  background-size: cover;
+  background-position: 0 50%;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+}
+
+main .schedule {
+  background-color: white;
+  position: relative;
+  z-index: 25;
+  width: 90%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  margin: -125px auto 0 auto;
+  /* margin: 0 auto; */
+  /* padding: 20px 0; */
+  border-radius: 10px;
+  border: solid 2px black;
+  box-shadow: 5px 5px 0 #107777;
+  /* position: relative; */
+}
+main .schedule::before {
+  content: "";
+  /* position: absolute; */
+  background-color: #67d0d0;
+  width: 10px;
+  height: 90px;
+  border-radius: 10px 0 0 10px;
+  border-right: solid 2px black;
+}
+main .schedule img {
+  width: 50px;
+  height: 50px;
+  margin: 0 0 0 20px;
+  object-fit: cover;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px white, 0 0 0 4px black;
+}
+main .schedule p {
+  /* background-color: #00000025; */
+  font-size: 17.5px;
+  font-weight: bolder;
+  margin: 0 0 0 20px;
+}
+/* main div {
+  margin: 0;
+} */
+
+main .content {
+  background-color: white;
+  z-index: 0;
+  width: 100%;
+  height: 1000px;
+  margin: -50px 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border: solid 2px black;
+}
+.content .con_tab {
+  background-color: #d6eded;
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+  height: 125px;
+  margin: 20% 0 0 0;
+  /* border: solid 1px black; */
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.content .con_tab .con_tab_menu {
+  /* background-color: #00000025; */
+  width: 30%;
+  height: 100%;
+  margin: 0;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}
+.content .con_tab .con_tab_menu div {
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  margin: 20% auto 0 auto;
+  padding: 10%;
+  border-radius: 50%;
+  border: solid 2px black;
+}
+.content .con_tab .con_tab_menu img {
+  width: 100%;
+}
+.content .con_tab .con_tab_menu p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.content .con_kari1 {
+  background-color: #67d0d0;
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 100px;
+}
+.content .con_kari2 {
+  background-color: #d6eded;
+  width: 100%;
+  height: 550px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+/*  */
+.tab_menu {
+  background-color: #ffffff;
+  z-index: 75;
+  width: 100%;
+  min-width: 375px;
+  max-width: 430px;
+  height: 70px;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+
+  position: fixed;
+  bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.tab_menu .tab_home {
+  /* background-color: #00000025; */
+  width: 20%;
+}
+.tab_menu .tab_talk {
+  /* background-color: #00000025; */
+  width: 20%;
+}
+.tab_menu .tab_situation {
+  /* background-color: #00000025; */
+  width: 20%;
+}
+.tab_menu .tab_news {
+  /* background-color: #00000025; */
+  width: 20%;
+}
+.tab_menu .tab_other {
+  /* background-color: #00000025; */
+  width: 20%;
+}
+.tab_menu .tab_icon {
+  /* background-color: #00000025; */
+  height: 30px;
+  margin: 15px 0 0 0;
+}
+.tab_menu p {
+  /* background-color: #00000025; */
+  font-size: 11px;
+  font-weight: bold;
+  margin: -5px auto 0 auto;
+  text-align: center;
+}
+
+footer {
+  background-color: #67d0d0;
+  z-index: 50;
+  width: 100%;
+  min-width: 375px;
+  max-width: 430px;
+  height: 75px;
+
+  position: fixed;
+  bottom: 0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login_style.css" />
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>アカウント作成</title>
+  </head>
+  <body class="log_input">
+    <p class="input_instruction">必須項目を入力してください。</p>
+
+    <!--  -->
+    <input
+      v-model="school"
+      :style="inputTextSchool"
+      @click.once="changeSchool"
+    />
+    <!-- <p>{{school}}</p> -->
+
+    <input
+      type="email"
+      v-model="mail"
+      :style="inputTextMail"
+      @click.once="changeMail"
+    />
+    <!-- <p>{{mail}}</p> -->
+
+    <input
+      type="tel"
+      v-model="phone"
+      :style="inputTextPhone"
+      @click.once="changePhone"
+    />
+    <!-- <p>{{phone}}</p> -->
+
+    <input v-model="id" :style="inputTextId" @click.once="changeId" />
+    <!-- <p>{{id}}</p> -->
+
+    <input
+      type="password"
+      v-model="pass"
+      :style="inputTextPass"
+      @click.once="changePass"
+    />
+    <!-- <p>{{pass}}</p> -->
+
+    <div class="input_next">
+      <!-- <p>count:{{inputCount}}</p> -->
+      <!-- <p>ここのフォント</p> -->
+      <p :style="inputNextText">次へ</p>
+      <a href="icon_choose.html" :style="inputNextArrow">→</a>
+    </div>
+
+    <!--  -->
+    <script src="https://unpkg.com/petite-vue"></script>
+    <script src="login_script.js"></script>
+  </body>
+</html>

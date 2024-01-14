@@ -1,0 +1,225 @@
+/* input */
+.log_input {
+  background-color: #67d0d0;
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  max-width: 430px;
+  max-height: 932px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: center;
+}
+.log_input .input_instruction {
+  margin-top: 125px;
+  font-size: large;
+  font-weight: bold;
+}
+/* .log_input .input_text {
+  width: 75%;
+  height: 45px;
+  font-size: medium;
+  margin: 20px auto;
+  padding-left: 15px;
+  border-radius: 25px;
+  border: solid 1px #000000;
+  box-shadow: 3px 3px 0 #107777;
+} */
+.log_input .input_next {
+  /* background-color: #00000025; */
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.log_input p {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+/* .log_input .input_next_allow {
+  background-color: #d6eded;
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  border: solid 1px #000000;
+  box-shadow: 3px 3px 0 0 #107777 inset;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;\
+} */
+
+/* icon_choose */
+.log_icon_choose {
+  background-color: #ffffff;
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  max-width: 430px;
+  max-height: 932px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: center;
+}
+.log_icon_choose .icon_instruction {
+  margin-top: 125px;
+  font-size: large;
+  font-weight: bold;
+}
+/*  */
+.chooseIcon {
+  /* background-color: #67d0d0; */
+  margin: 25px 0;
+  padding: 10px 50px 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+.chooseIcon div {
+  display: flex;
+  align-items: center;
+}
+.chooseIcon div:nth-child(1) img,
+.chooseIcon div:nth-child(2) img,
+.chooseIcon div:nth-child(3) img,
+.chooseIcon div:nth-child(4) img,
+.chooseIcon div:nth-child(5) img,
+.chooseIcon div:nth-child(6) img {
+  margin: 0 auto;
+  height: 30px;
+}
+.chooseIcon div:nth-child(7) img,
+.chooseIcon div:nth-child(8) img,
+.chooseIcon div:nth-child(9) img,
+.chooseIcon div:nth-child(10) img,
+.chooseIcon div:nth-child(11) img {
+  margin: 0 auto;
+  height: 50px;
+}
+.chooseIcon div:nth-child(12) a {
+  margin: 0 auto;
+  color: #000000;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*  */
+.log_icon_choose .icon_next {
+  /* background-color: #00000025; */
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.icon_next p {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* icon_upload */
+.log_upload {
+  background-color: #ffffff;
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  max-width: 430px;
+  max-height: 932px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: center;
+}
+
+/* completion */
+.log_completion {
+  background-color: #67d0d0;
+  margin: 0;
+  box-sizing: border-box;
+
+  width: 100vw;
+  height: 100vh;
+  min-width: 375px;
+  min-height: 667px;
+  max-width: 430px;
+  max-height: 932px;
+
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  text-align: center;
+}
+.log_completion .comp_instruction {
+  margin-top: 150px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.log_completion .comp_icon {
+  /* background-color: #00000055; */
+  margin: 0 auto;
+  margin-top: 75px;
+  width: 300px;
+}
+.log_completion .comp_icon p {
+  background-color: #d6eded;
+  margin: 30px auto;
+  height: 50;
+  font-size: xx-large;
+  font-weight: bold;
+  border: solid 2px#000000;
+  border-radius: 50px;
+}
+.log_completion .comp_icon div {
+  /* background-color: #00000085; */
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: flex;
+  border-radius: 300px;
+  border: solid 2px #000000;
+  box-shadow: 3px 3px 0 #107777;
+}
+.log_completion .comp_icon div img {
+  margin: 0 auto;
+  width: 150px;
+}
+
+.log_completion .comp_next {
+  /* background-color: #00000025; */
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.comp_next p {
+  margin: 0;
+  margin-right: 10px;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
